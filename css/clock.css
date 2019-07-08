@@ -90,11 +90,6 @@ header a:hover{
       width: 65px;
   }
 
-/* @media all and (max-width: 3600px){
-    .mobile-container{
-        display: none;
-    }
-} */
 @media all and (max-width: 991px){
     .mobile-container{
         display: block;
@@ -206,8 +201,6 @@ pre{
     width: 35%;
 }
 
-
-
 footer{
     width: 100%;
 }
@@ -253,15 +246,10 @@ footer{
     .footer-left a{
         font-size: 16px;
     }
+    .image_center{
+        padding: 50px 0px 0px 20px;
+    }
 } 
-
-
-
-
-
-
-
-
 
 ::-webkit-scrollbar{
     background: #f0ec03;
@@ -276,16 +264,19 @@ footer{
     border-radius: 15px;
 }
 
-
-
 @media all and (max-width: 1030px) {
     .center{
-        height: 800px;
+        height: 600px;
     }
 } 
-@media all and (max-width: 1011px){
+@media all and (max-width: 1212px){
     .image_header{
        display: none;
+    }
+}
+@media all and (max-width: 900px){
+    .center{
+        height: 500px;
     }
 }
 
@@ -296,10 +287,13 @@ footer{
     pre{
         margin-top: 50px;
     }
+    .center{
+        height: 800px;
+    }
 }
 @media all and (max-width: 450px){
     .center{
-        height: 600px;
+        height: 630px;
     }
     pre{
         margin-top: 50px;
