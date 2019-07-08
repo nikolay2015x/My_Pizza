@@ -188,6 +188,11 @@ header a:hover{
     width: 80%;
     padding: 100px 0px 0px 20px;
 }
+@media (max-width: 1015px){
+    .image_center{
+        padding: 100px 0px 0px 10px;
+    } 
+}
 .position{
     display: flex;
 }
@@ -200,7 +205,11 @@ pre{
     color: #fff;
     width: 35%;
 }
-
+@media (max-width: 1015px){
+    pre{
+        width: 50%;
+    }
+}
 footer{
     width: 100%;
 }
