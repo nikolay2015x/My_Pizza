@@ -1,0 +1,436 @@
+.mobile-container {
+    position: absolute;
+    max-width: 480px;
+    margin: auto;
+    border-radius: 10px;
+    z-index: 2;
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: rgba(97, 96, 96, 0.589);
+    position: relative;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+  
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.active {
+    opacity: rgba(226, 183, 135, 0.288);
+    color: white;
+}
+  
+  .topnav img{
+      width: 65px;
+  }
+
+@media all and (max-width: 3600px){
+    .mobile-container{
+        display: none;
+    }
+}
+@media all and (max-width: 480px){
+    .mobile-container{
+        display: block;
+        position: fixed;
+        width: 100%;
+    }
+}
+@media all and (max-width: 480px){
+    header {
+        display: none;
+    }
+}
+
+
+header{
+    width: 100%;
+    background: rgb(104, 94, 82);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+header li{
+    display: inline-block;
+    margin-left:30px;
+    margin-top: 40px;
+}
+.manchester{
+    color: rgb(226, 183, 135);
+}
+header a{
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    font-size: 2.1vw;
+    font-family: 'Poiret One', cursive;
+}
+header a:hover{
+    color: rgb(0, 0, 0);
+}
+.header-wrap{
+    width: 100%;
+    height: 100px;;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.independent{
+    font-size: 100px;
+    color: rgb(226, 183, 135);
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+}
+
+.function{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.dws-wrapper{
+    position: relative;
+    width: 436px;
+    height: 250px;
+    font-family: 'Lobster', cursive;
+    overflow: hidden;
+}
+
+.dws-wrapper > .dws-img{
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.dws-wrapper > .dws-overlay{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(226, 183, 135, 0) ;
+    transition: background 0.8s; 
+}
+.dws-wrapper:hover > .dws-overlay{
+    background: rgba(226, 183, 135) ;
+}
+.dws-overlay:hover .text h1{
+    transform: scale(1);
+}
+.dws-overlay .text p{
+    transition: 0.5;
+}
+.dws-overlay:hover .text p{
+    transform: scale(1);
+    opacity: 1;
+}
+.dws-overlay:hover  a.bt{
+    opacity: 1;
+    transition: .5s;
+}
+
+.boxImg{
+    font-family: 'Lobster', cursive;
+    width: 442px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.boxImg img{
+    height: 290px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.text{
+    position: absolute;
+    top: 20%;
+    color: #ffffff;
+    text-align: center;
+}
+.text h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    transform: scale(0);
+    transform: .5s;
+}
+.text p{
+    font-size: 18px;
+    margin: 0 100px;
+    text-align: justify;
+    transform: scale(2);
+    transition: .5s;
+    opacity: 0;
+}
+a.bt{
+    position: absolute;
+    top: 100%;
+    left: 37%;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: .2s ease-in-out;
+    overflow: hidden;
+    margin-top: 15px;
+}
+a.bt:active{
+border: 2px solid #b3b3b3;
+}
+
+.boxImg:hover .text h1{
+    transform: scale(1);
+}
+.boxImg:hover .text p{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.boxImg:hover  a.bt{
+    opacity: 1;
+    transition: .5s;
+}
+
+
+.onion{
+    display: flex;
+}
+footer{
+    width: 100%;
+    background: rgb(104, 94, 82);
+    border-top: rgb(221, 171, 113) 2px solid;
+}
+.footer_btc{
+    padding: 30px 60px;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(219, 136, 40);
+    width: 60%;
+}
+.footer_btc:hover{
+    color: rgb(0, 0, 0);
+}
+.footer_btc a{
+    color: rgb(219, 136, 40);
+    text-decoration: none;
+}
+.footer_btc a:hover{
+    color: white;
+    cursor: pointer;
+}
+.footer_icon{
+    width: 40%;
+}
+.footer_icon img{
+    padding: 10px;
+}
+ .facetator{
+    background: url(../foto/facebook.png);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.facetator:hover{
+    background: url(../foto/facebook2.png) ;
+}
+a.social{
+    position: absolute;
+    padding: 1000px;
+}
+.twiteratto{
+    background: url(../foto/twitter.png);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.twiteratto:hover{
+    background: url(../foto/twitter2.png) ;
+}
+.vkattor{
+    background: url(../foto/vk.png);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.vkattor:hover{
+    background: url(../foto/vk2.png) ;
+}
+.insttator{
+    background: url(../foto/instagram.png);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.insttator:hover{
+    background: url(../foto/instagram2.png) ;
+}
+::-webkit-scrollbar{
+    background: #f0ec03;
+    width: 14px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px white;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(125deg,#f1c40f, #f6b93b, #eb2f06);
+    border-radius: 15px;
+}
+@media screen and (max-width: 1323px){
+    .function{
+      justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1011px){
+    .image_header{
+       display: none;
+    }
+}
+@media all and (max-width: 800px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media all and (max-width: 762px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+    }
+}
+@media all and (max-width: 655px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 30px;
+        height: 28px;
+    }
+}
+@media all and (max-width: 584px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 30px;
+        height: 26px;
+    }
+}
+@media all and (max-width: 523px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 30px;
+        height: 24px;
+    }
+}
+@media all and (max-width: 473px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 30px;
+        height: 22px;
+    }
+}
+@media all and (max-width: 800px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media all and (max-width: 762px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+    }
+}
+@media all and (max-width: 655px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 30px;
+        height: 28px;
+    }
+}
+@media all and (max-width: 584px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 30px;
+        height: 26px;
+    }
+}
+@media all and (max-width: 523px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 30px;
+        height: 24px;
+    }
+}
+@media all and (max-width: 473px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 30px;
+        height: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

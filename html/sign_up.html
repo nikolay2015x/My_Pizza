@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/main1.css">
+    <link rel="stylesheet" href="../css/registr.css">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <li onclick="show('block')"><a href="#">Войти</a></li>
+    <div id="window">
+                <div class="loginbox">
+                    <div onclick="show('none')" class="close">
+                        <p>&chi;</p>
+                    </div>
+                    <h1>Войти</h1>
+                    <form>
+                        <p>Введите имя</p>
+                        <input type="text" name="" placeholder="Логин">
+                        <p>Введите Пароль</p>
+                        <input type="password" name="" placeholder="Пароль">
+                        <input type="submit" name="" value="Войти">
+                        <a href="#">Забыли пароль?</a><br>
+                        <a href="#">Регистрация</a>
+                    </form>
+                </div>
+        </div>
+    <script>
+        function show(state) {
+            document.getElementById('window').style.display = state;
+        }
+    </script>
+  <li><a href="#">Регистрация</a></li>
+<div id="popap">
+    <div class="pass">
+        <div class="cls">
+            <p>&chi;</p>
+        </div>
+        <h1>Регистрация</h1>
+        <form>
+            <h1>Введите Логин</h1>
+            <input type="text" name="" placeholder="Логин">
+            <h1>Введите E-mail</h1>
+            <input type="email" name="" placeholder="E-mail">
+            <h1>Введите пароль</h1>
+            <input type="password" name="" placeholder="Пароль">
+            <h1>Повторите пароль</h1>
+            <input type="password" name="" placeholder="Пароль">
+        </form>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

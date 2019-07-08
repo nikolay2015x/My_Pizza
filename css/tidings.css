@@ -1,0 +1,399 @@
+.mobile-container {
+    position: absolute;
+    max-width: 480px;
+    margin: auto;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgba(97, 96, 96, 0.589);
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    opacity: rgba(226, 183, 135, 0.288);
+    color: white;
+}
+  .topnav img{
+      width: 65px;
+}
+@media all and (max-width: 3600px){
+    .mobile-container{
+        display: none;
+    }
+}
+@media all and (max-width: 480px){
+    .mobile-container{
+        display: block;
+        position: fixed;
+        width: 100%;
+    }
+}
+@media all and (max-width: 480px){
+    header {
+        display: none;
+    }
+}
+
+dialog{
+    background-color:   rgb(226, 183, 135);
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 100px;
+}
+dialog::backdrop{
+    background-color: rgba(248, 247, 246, 0.438);
+}
+
+dialog img{
+    width: 50%;
+    margin-top: 20px;
+}
+dialog p{
+    font-size: 30px;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    padding: 0px 100px 0px 100px;
+}
+dialog h1{
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    padding: 0px 100px 0px 100px;
+}
+dialog button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+dialog h2{
+    font-size: 20px;
+    margin-top: 30px;
+    font-family: 'Nunito', sans-serif;
+    padding: 0px 100px 0px 100px;
+}
+dialog h3{
+    font-size: 20px;
+    margin-top: 30px;
+    font-family: 'Nunito', sans-serif;
+    padding: 0px 100px 0px 100px;
+}
+
+
+header{
+    width: 100%;
+    background: rgb(104, 94, 82);
+}
+header li{
+    display: inline-block;
+    margin-left:30px;
+    margin-top: 40px;
+}
+.manchester{
+    color: white;
+}
+header a{
+    text-decoration: none;
+    color: rgb(226, 183, 135);
+    font-size: 2.1vw;
+    font-family: 'Poiret One', cursive;
+}
+header a:hover{
+    color: rgb(0, 0, 0);
+}
+.header-wrap{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.conteiner{
+    display: flex;
+    padding: 60px 0px 0px 0px;
+}
+
+.info a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(226, 145, 52);
+    text-align: center;
+    display:block;
+    margin:0 auto;
+    margin-top: 10px;
+}
+
+.info{
+    border: 2px solid rgb(0, 0, 0);
+    width: 60%;
+    text-align: center;
+    display:block;
+    margin:0 auto;
+    margin-top: 15px;
+    background: rgb(63, 60, 58);
+    position: relative;
+    cursor: pointer;
+}
+.show > img{
+    width: 100%;
+    text-align: center;
+    display:block;
+    margin:0 auto;
+}
+
+.info .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.8);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .2s ease;
+}
+.info:hover .overlay {
+    height: 30%;
+}
+
+
+.onion{
+    display: flex;
+}
+footer{
+    width: 100%;
+    background: rgb(104, 94, 82);
+    border-top: rgb(221, 171, 113) 2px solid;
+}
+.footer_btc{
+    padding: 30px 60px;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(219, 136, 40);
+    width: 60%;
+}
+.footer_btc:hover{
+    color: rgb(0, 0, 0);
+}
+.footer_btc a{
+    color: rgb(219, 136, 40);
+    text-decoration: none;
+}
+.footer_btc a:hover{
+    color: white;
+    cursor: pointer;
+}
+.footer_icon{
+    width: 40%;
+}
+.footer_icon img{
+    padding: 10px;
+}
+
+ 
+ .facetator{
+    background: url(../foto/facebook.png);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.facetator:hover{
+    background: url(../foto/facebook2.png) ;
+}
+a.bt{
+    position: absolute;
+    padding: 1000px;
+}
+.twiteratto{
+    background: url(../foto/twitter.png);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.twiteratto:hover{
+    background: url(../foto/twitter2.png) ;
+}
+.vkattor{
+    background: url(../foto/vk.png);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.vkattor:hover{
+    background: url(../foto/vk2.png) ;
+}
+.insttator{
+    background: url(../foto/instagram.png);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.insttator:hover{
+    background: url(../foto/instagram2.png) ;
+}
+::-webkit-scrollbar{
+    background: #f0ec03;
+    width: 14px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px white;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(125deg,#f1c40f, #f6b93b, #eb2f06);
+    border-radius: 15px;
+}
+@media screen and (max-width: 1000px){
+    .conteiner{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1011px){
+    .image_header{
+       display: none;
+    }
+}
+
+@media screen and (max-width: 834px){
+    .bt{
+        width: 20px;
+    }
+}
+@media all and (max-width: 800px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media all and (max-width: 762px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+    }
+}
+@media all and (max-width: 655px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 30px;
+        height: 28px;
+    }
+}
+@media all and (max-width: 584px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 30px;
+        height: 26px;
+    }
+}
+@media all and (max-width: 523px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 30px;
+        height: 24px;
+    }
+}
+@media all and (max-width: 473px) {
+    .vkattor, .insttator, .twiteratto, .facetator{
+        background-size: contain;
+        width: 30px;
+        height: 22px;
+    }
+}
+@media all and (max-width: 800px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+    }
+}
+@media all and (max-width: 762px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+    }
+}
+@media all and (max-width: 655px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 30px;
+        height: 28px;
+    }
+}
+@media all and (max-width: 584px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 30px;
+        height: 26px;
+    }
+}
+@media all and (max-width: 523px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 30px;
+        height: 24px;
+    }
+}
+@media all and (max-width: 473px) {
+    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
+        background-size: contain;
+        width: 30px;
+        height: 22px;
+    }
+}
+
+
+@media screen and (max-width: 928px){
+    dialog p{
+        padding: 0px 50px 0px 50px;
+    } 
+ }
+
+
+

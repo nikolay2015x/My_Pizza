@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/main1.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="shortcut icon" href="http://www.pizzeriabaffetto.it/wp-content/uploads/2017/03/Senza-titolo-1.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="java_script/menuu.js" async></script>
+    <script src="java_script/scrol.js" async></script>
+    <script src="java_script/sign.js" async></script>
+    <title>"Pizzeria Da Baffetto"</title>
+</head>
+
+<body>
+    <div class="click" onclick="topFunction()" id="myBtn" title="Go to top">
+            <div class="arrows_up">
+                
+            </div>
+    </div>
+    
+<div class="mobile-container">
+
+    <div class="topnav">
+        <a href="#home" class="active"><img src="foto/white.png" alt="photo"></a>
+        <div id="myLinks">
+            <a href="html/online.html">Онлайн Заказ</a>
+            <a href="html/menus.html">Меню</a>
+            <a href="html/time.html">Контакты</a>
+            <a href="html/news.html">Новости</a>
+            <a onclick="show('block')" href="#">Войти</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+    <header>
+        <div class="header-wrap">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#" class="manchester">Главная</a></li>
+                    <li><a href="html/menus.html">Меню</a></li>
+                    <li><a href="html/online.html">Онлайн Заказ</a></li>
+                    <li><a href="html/time.html">Контакты</a></li>
+                    <li><a href="html/news.html">Новости</a></li>
+                    <li onclick="show('block')"><a href="#">Войти</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img src="foto/white.png" alt="white" class="image_header">
+            </div>
+        </div>
+        <div class="main-text">
+            <span>Это</span>
+            <h1>ВАША ПИЦЦА</h1>
+            <p>Минск</p>
+        </div>
+    </header>
+    <div id="window">
+        <div class="bacg">
+            <div class="loginbox">
+                <div onclick="show('none')" class="close">
+                    <p>&chi;</p>
+                </div>
+                <h1>Войти</h1>
+                <form>
+                    <p>Введите имя</p>
+                    <input type="text" name="" placeholder="Логин">
+                    <p>Введите Пароль</p>
+                    <input type="password" name="" placeholder="Пароль">
+                    <input type="submit" name="" value="Войти">
+                    <a href="#">Забыли пароль?</a><br>
+                    <a href="#">Регистрация</a>
+                </form>
+            </div>
+        </div>
+    </div>
+<script>
+function show(state) {
+    document.getElementById('window').style.display = state;
+}
+</script>
+    <div class="center">
+        <div class="position">
+            <div>
+                <img src="foto/photooooo.png" alt="pizzaa" class="image_center">
+            </div>
+            <pre>
+        О пицца! Нежная моя,
+        Когда увижу я тебя,
+        То слюнки сразу потекут
+        И остается там и тут
+        Лишь есть. И есть, и есть тебя,
+        О пицца, милая моя!
+        Прошу останься ты со мною,
+        Люблю тебя я всей душою!
+        Клянусь всегда тобой питаться,
+        И никогда не расставаться
+        С тем вкусом чудным, ароматом…
+                </pre>
+        </div>
+    </div>
+
+
+<footer>
+    <div class="footer-info">
+        <div class="footer-whole">
+            <div class="footer-common">
+                <!--общий блок -->
+                <div class="footer-left test">
+                    <a href="#">© 2019 "Pizzeria Da Baffetto"</a>
+                </div>
+                <div class="footer-right test">
+                    <a href="#"><img src="foto/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="foto/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="foto/twitter.png" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
