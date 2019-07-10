@@ -1,6 +1,7 @@
 .mobile-container {
+    display: none;
     position: absolute;
-    max-width: 480px;
+    max-width: 991px;
     margin: auto;
     border-radius: 10px;
     z-index: 2;
@@ -44,19 +45,15 @@
   .topnav img{
       width: 65px;
 }
-@media all and (max-width: 3600px){
-    .mobile-container{
-        display: none;
-    }
-}
-@media all and (max-width: 480px){
+@media all and (max-width: 991px){
     .mobile-container{
         display: block;
         position: fixed;
         width: 100%;
     }
-}
-@media all and (max-width: 480px){
+    .main-nav{
+        display: none;
+    }
     header {
         display: none;
     }
@@ -102,13 +99,6 @@ dialog h2{
     font-family: 'Nunito', sans-serif;
     padding: 0px 100px 0px 100px;
 }
-dialog h3{
-    font-size: 20px;
-    margin-top: 30px;
-    font-family: 'Nunito', sans-serif;
-    padding: 0px 100px 0px 100px;
-}
-
 
 header{
     width: 100%;
@@ -168,8 +158,8 @@ header a:hover{
 .show > img{
     width: 100%;
     text-align: center;
-    display:block;
-    margin:0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .info .overlay {
@@ -186,94 +176,54 @@ header a:hover{
 .info:hover .overlay {
     height: 30%;
 }
-
-
-.onion{
-    display: flex;
-}
 footer{
     width: 100%;
-    background: rgb(104, 94, 82);
-    border-top: rgb(221, 171, 113) 2px solid;
+    background-color: rgb(104, 94, 82);
 }
-.footer_btc{
-    padding: 30px 60px;
-    font-size: 17px;
-    font-family: 'PT Sans', sans-serif;
-    color: rgb(219, 136, 40);
-    width: 60%;
+.footer-whole{
+    width: 90%;
+    justify-content: center;
+    margin: auto;
 }
-.footer_btc:hover{
-    color: rgb(0, 0, 0);
+.footer-common{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 80px;
 }
-.footer_btc a{
-    color: rgb(219, 136, 40);
+.test{
+    align-items: center;
+    display: flex;
+}
+.footer-left a{
     text-decoration: none;
+    color: rgb(219, 136, 40);
+    font-size: 18px;
 }
-.footer_btc a:hover{
-    color: white;
-    cursor: pointer;
+.footer-left a:hover{
+    color: #ddd;
 }
-.footer_icon{
-    width: 40%;
+.footer-right a{
+    padding: 0px 10px;
 }
-.footer_icon img{
-    padding: 10px;
+.footer-right img{
+    width: 50px;
 }
+@media (max-width: 479px){
+    .footer-right img{
+        width: 25px;
+    }
+    .footer-right a{
+        padding: 0px 5px;
+    }
+    .footer-left a{
+        font-size: 16px;
+    }
+    .image_center{
+        padding: 50px 0px 0px 20px;
+    }
+} 
 
- 
- .facetator{
-    background: url(../foto/facebook.png);
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    position: relative;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-.facetator:hover{
-    background: url(../foto/facebook2.png) ;
-}
-a.bt{
-    position: absolute;
-    padding: 1000px;
-}
-.twiteratto{
-    background: url(../foto/twitter.png);
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    position: relative;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-.twiteratto:hover{
-    background: url(../foto/twitter2.png) ;
-}
-.vkattor{
-    background: url(../foto/vk.png);
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    position: relative;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-.vkattor:hover{
-    background: url(../foto/vk2.png) ;
-}
-.insttator{
-    background: url(../foto/instagram.png);
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    position: relative;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-.insttator:hover{
-    background: url(../foto/instagram2.png) ;
-}
 ::-webkit-scrollbar{
     background: #f0ec03;
     width: 14px;
@@ -297,97 +247,6 @@ a.bt{
        display: none;
     }
 }
-
-@media screen and (max-width: 834px){
-    .bt{
-        width: 20px;
-    }
-}
-@media all and (max-width: 800px) {
-    .vkattor, .insttator, .twiteratto, .facetator{
-        background-size: contain;
-        width: 40px;
-        height: 40px;
-    }
-}
-@media all and (max-width: 762px) {
-    .vkattor, .insttator, .twiteratto, .facetator{
-        background-size: contain;
-        width: 30px;
-        height: 30px;
-    }
-}
-@media all and (max-width: 655px) {
-    .vkattor, .insttator, .twiteratto, .facetator{
-        background-size: contain;
-        width: 30px;
-        height: 28px;
-    }
-}
-@media all and (max-width: 584px) {
-    .vkattor, .insttator, .twiteratto, .facetator{
-        background-size: contain;
-        width: 30px;
-        height: 26px;
-    }
-}
-@media all and (max-width: 523px) {
-    .vkattor, .insttator, .twiteratto, .facetator{
-        background-size: contain;
-        width: 30px;
-        height: 24px;
-    }
-}
-@media all and (max-width: 473px) {
-    .vkattor, .insttator, .twiteratto, .facetator{
-        background-size: contain;
-        width: 30px;
-        height: 22px;
-    }
-}
-@media all and (max-width: 800px) {
-    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
-        background-size: contain;
-        width: 40px;
-        height: 40px;
-    }
-}
-@media all and (max-width: 762px) {
-    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
-        background-size: contain;
-        width: 30px;
-        height: 30px;
-    }
-}
-@media all and (max-width: 655px) {
-    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
-        background-size: contain;
-        width: 30px;
-        height: 28px;
-    }
-}
-@media all and (max-width: 584px) {
-    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
-        background-size: contain;
-        width: 30px;
-        height: 26px;
-    }
-}
-@media all and (max-width: 523px) {
-    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
-        background-size: contain;
-        width: 30px;
-        height: 24px;
-    }
-}
-@media all and (max-width: 473px) {
-    .vkattor:hover, .insttator:hover, .twiteratto:hover, .facetator:hover{
-        background-size: contain;
-        width: 30px;
-        height: 22px;
-    }
-}
-
 
 @media screen and (max-width: 928px){
     dialog p{
